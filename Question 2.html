@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var Age1 = prompt("Enter the age of the first person:");
+var Age2 = prompt("Enter the age of the second person:");
+
+if (Age1 > 0 && Age2 > 0) {
+    if (Age1 === Age2) {
+        document.write("Both persons are of the same age.");
+    } else if (Age1 > Age2) {
+        document.write("The oldest person is " + Age1 + " years old.");
+        document.write("<br>");
+        document.write("The youngest person is " + Age2 + " years old.");
+    } else {
+        document.write("The oldest person is " + Age2 + " years old.");
+        document.write("<br>");
+        document.write("The youngest person is " + Age1 + " years old.");
+    }
+}
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var studentName = prompt("Enter Your Name");
+var rollNumber = prompt("Enter Your Roll Number");
+var className = prompt("Enter Your Class");
+
+var Totaltestmarks = 500
+
+var mathsMarks = prompt("Ener Your Maths Marks")
+var englishMarks = prompt("Ener Your English Marks")
+var scienceMarks = prompt("Ener Your Science Marks")
+var socialScienceMarks = prompt("Ener SocialScience Maths Marks")
+var computerMarks = prompt("Ener Your Computer Marks")
+
+var totalMarks = mathsMarks + englishMarks + scienceMarks + socialScienceMarks + computerMarks;
+
+var percentage = totalMarks / Totaltestmarks *100
+
+let grade;
+if (percentage >= 90) {
+    grade = "A+";
+} else if (percentage >= 80) {
+    grade = "A";
+} else if (percentage >= 70) {
+    grade = "B";
+} else if (percentage >= 60) {
+    grade = "C";
+} else {
+    grade = "Fail";
+}
+
+document.write("<h2>Student Marksheet</h2>");
+document.write(`Name: ${studentName}<br>`);
+document.write(`Roll Number: ${rollNumber}<br>`);
+document.write(`Class: ${className}<br>`);
+document.write(`Total Marks: ${totalMarks}<br>`);
+document.write(`Percentage: ${percentage}<br>`);
+document.write(`Grade Obtained: ${grade}<br>`);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const totalClassesHeld = 16;
+var classesAttended = prompt("Enter Total Classes Attented");
+
+const attendancePercentage = classesAttended / totalClassesHeld * 100;
+
+if (attendancePercentage >= 75) {
+    document.write(`Attendance Percentage: ${attendancePercentage}%`);
+    document.write("<br>");
+    document.write("The student is allowed to sit for the exam.");
+} else {
+    document.write(`Attendance Percentage: ${attendancePercentage}%`);
+    document.write("<br>");
+    document.write("The student is not allowed to sit for the exam due to low attendance.");
+}
+
+    </script>
+    
+</body>
+</html>

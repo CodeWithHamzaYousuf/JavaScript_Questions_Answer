@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const num1 = prompt("Enter the first number:");
+const num2 = prompt("Enter the second number:");
+const num3 = prompt("Enter the third number:");
+
+let greatest = num1;
+if (num2 > greatest) {
+    greatest = num2;
+}
+if (num3 > greatest) {
+    greatest = num3;
+}
+
+let lowest = num1;
+if (num2 < lowest) {
+    lowest = num2;
+}
+if (num3 < lowest) {
+    lowest = num3;
+}
+
+document.write(`The greatest number is ${greatest}.<br>`);
+document.write(`The lowest number is ${lowest}.`);
+
+    </script>
+    
+</body>
+</html>

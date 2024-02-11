@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const ID = ("1001")
+        const Name = ("James")
+        var Units = prompt("Enter Your Units Consumed")
+
+        var ChargesPerUnit;
+        var TotalAmount;
+
+        if(Units <= 199){
+            ChargesPerUnit = 1.20;
+        } else if (Units >= 200 && Units <= 400) {
+            ChargesPerUnit = 1.50
+        } else if (Units >= 400 && Units <= 600){
+            ChargesPerUnit = 1.80
+        } else {
+            ChargesPerUnit = 2.00
+        }
+
+        TotalAmount = Units * ChargesPerUnit;
+
+        document.write(`Customer IDNO: ${ID} <br>`);
+        document.write(`Customer Name: ${Name} <br>`);
+        document.write(`Units Consumed: ${Units} <br>`);
+        document.write(`Amount Of Chargers @Rs.: ${ChargesPerUnit} Per Unit: ${TotalAmount} <br>`);
+        document.write(`Net Bill Amount: ${TotalAmount} <br>`);
+    </script>
+    
+</body>
+</html>
